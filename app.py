@@ -21,7 +21,7 @@ with st.sidebar:
 
 # --- 核心邏輯：Gemini Prompt ---
 def get_gemini_response(user_input, image_input=None):
-    model = genai.GenerativeModel('gemini-1.5-flash-pro') 
+    model = genai.GenerativeModel('gemini-1.5-pro') 
     
     system_instruction = """
     你是一位世界頂尖的建築視覺化專家。請將使用者的建築設計條件，轉化為一段「高品質、照片級真實」的英文圖像生成提示詞 (Prompt)。
